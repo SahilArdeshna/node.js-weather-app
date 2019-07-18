@@ -7,7 +7,7 @@
     "start": "node src/app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sahil Ardeshna",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
