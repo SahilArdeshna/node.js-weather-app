@@ -11,7 +11,7 @@ const forcast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('Unable to find location!', undefined);
         } else {
-            callback(undefined, `${body.daily.data[0].summary} It is currently ${body.currently.temperature} °C out. There is a ${body.currently.precipProbability}% chance of rain.`);
+            callback(undefined, [[`${body.daily.data[0].summary} It is currently ${body.currently.temperature} °C out. There is a ${body.currently.precipProbability}% chance of rain.`], [`Today's maximum temperature is ${body.daily.data[0].temperatureMax} °C and minimum temperature is ${body.daily.data[0].temperatureMin} °C.`]]);            
         }
     });
 };

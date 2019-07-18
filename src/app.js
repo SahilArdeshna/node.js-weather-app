@@ -71,7 +71,10 @@ app.get('/weather', (req, res) => {
             
             res.send({
                 location,
-                forcast: forcastData
+                forcast: [
+                    forcastData[0],
+                    forcastData[1]
+                ]    
             });
         });        
     });
